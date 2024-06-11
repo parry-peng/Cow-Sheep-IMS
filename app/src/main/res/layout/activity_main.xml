@@ -1,19 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ID"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:padding="16dp">
+
+        <!-- 第一列标题 -->
+        <TextView
+            android:id="@+id/textViewTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seven_avg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第二列数值 -->
+        <TextView
+            android:id="@+id/textViewValue1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数值1"
+            android:textSize="14sp"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第三列标题 -->
+        <TextView
+            android:id="@+id/textViewTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fourteen_avg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第四列数值 -->
+        <TextView
+            android:id="@+id/textViewValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数值2"
+            android:textSize="14sp"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第一列标题（第二行） -->
+        <TextView
+            android:id="@+id/textViewTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thirty_avg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第二列数值（第二行） -->
+        <TextView
+            android:id="@+id/textViewValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数值3"
+            android:textSize="14sp"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第三列标题（第二行） -->
+        <TextView
+            android:id="@+id/textViewTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sixty_avg"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+        <!-- 第四列数值（第二行） -->
+        <TextView
+            android:id="@+id/textViewValue4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数值4"
+            android:textSize="14sp"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:gravity="center" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/seven_curve_chart"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello World"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

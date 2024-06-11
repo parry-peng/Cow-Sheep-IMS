@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Cow-Sheep-IMS</string>
+    <string name="title">智能工程软件</string>
+    <string name="author">技术支持：</string>
+    <string name="ID">ID:</string>
+    <string name="cur_weight">当前质量：</string>
+    <string name="cur_temp">当前温度：</string>
+    <string name="seven_avg">7日平均值：</string>
+    <string name="fourteen_avg">14日平均值：</string>
+    <string name="thirty_avg">30日平均值：</string>
+    <string name="sixty_avg">60日平均值：</string>
+    <string name="seven_curve_chart">7日曲线图：</string>
+    <string name="info_entry">信息录入：</string>
+    <string name="info_inquiry">信息查询：</string>
+    <string name="underweight">体重偏轻：较7日平均值)</string>
 </resources>
